@@ -23,6 +23,3 @@ CMD ["python","flasky.py"]
 docker build -t my-flask-image .
 docker run my-flask-image
 
-
-
-docker run -d -e 
