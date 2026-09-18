@@ -1,0 +1,9 @@
+timedatectl status
+sudo systemctl restart systemd-timesyncd
+sudo timedatectl set-ntp false && sudo timedatectl set-ntp true
+timedatectl timesync-status
+sudo apt update && sudo apt install -y htpdate
+sudo htpdate -s -t ://google.com ://cloudflare.com
+sudo htpdate -s -t google.com cloudflare.com
+date
+history

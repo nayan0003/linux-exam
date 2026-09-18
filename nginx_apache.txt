@@ -1,0 +1,6 @@
+docker pull nginx/httpd
+nano index.html
+docker run -d --name mydockernginxcontainer -p 8081:80 nginx/httpd
+
+docker cp index.html mydockernginxcontainer:/usr/share/nginx/html
+docker cp index.html mydockernginxcontainer:/usr/local/apache2/htdocs/index.html
